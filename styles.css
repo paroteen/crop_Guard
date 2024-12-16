@@ -1,0 +1,110 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 2em;
+    color: #172e79;
+  }
+  
+  h1 {
+    font-style:normal;
+    text-align: center;
+    font-family: 'Red Rose', serif;
+  }
+  .white-text {
+    color: #d7dad2; /* White color for 'Sky' */
+  }
+
+  .blue-text {
+    color: #259678; /* Blue color for 'Guard' */
+  }
+
+  #webcamButton {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px; /* Adjust the border-radius for rounded edges */
+    background-color: #272596;
+    color: #1f192f;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Montserrat', sans-serif;
+    margin-right:10px;
+  }
+
+  #downloadButton{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px; /* Adjust the border-radius for rounded edges */
+    background-color: #259678;
+    color: #1f192f;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
+    
+  }
+  
+  
+   #videoContainer {
+    display: none; 
+    border: 2px solid #10d6cb; 
+    display: inline-block; 
+    border-radius: 5px; 
+  }
+
+  #webcam {
+    width: 640px;
+    height: 480px;
+    display: block; 
+  } 
+  
+  video {
+    display: block;
+  }
+  
+  section {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .removed {
+    display: none;
+  }
+  
+  .invisible {
+    opacity: 0.2;
+  }
+  
+  .camView {
+    position: relative;
+    float: left;
+    width: calc(100% - 20px);
+    margin: 10px;
+    cursor: pointer;
+    /* background: #000; */
+    height: fit-content;
+    width: 100%; 
+  }
+  
+  .camView p {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(255, 111, 0, 0.85);
+    color: #FFF;
+    border: 1px dashed rgba(255, 255, 255, 0.7);
+    z-index: 2;
+    font-size: 12px;
+  }
+  
+  .highlighter {
+    background: rgba(0, 255, 0, 0.25);
+    border: 1px dashed #fff;
+    z-index: 1;
+    position: absolute;
+  }
+  .action_buttons{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* background-color: #1f192f; */
+    width: fit-content;
+
+  }
